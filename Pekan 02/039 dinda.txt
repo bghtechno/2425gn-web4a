@@ -1,2 +1,0 @@
-nim :230631100039
-nama : adinda
