@@ -1,5 +1,5 @@
-Link Tugas
+Link Repository
 https://github.com/fadlimaghfirli/fadlimaghfirli.github.io
 
-Preview Web (github pages)
+Link Preview Web (github pages)
 https://fadlimaghfirli.github.io/
