@@ -1,0 +1,21 @@
+<table>
+  <tr> 
+  <td>no</td>
+    <td>nama</td>
+    <td>alamat</td>
+  </tr>
+</table>
+
+<table border =1>
+  <tr>
+    <td rowspan=2 >No</td>
+     <td colspan=2>jenis kelamin </td>
+     <td rowspan=2>nama</td>
+  </tr>
+  <tr>
+    <td>L</td>
+    <td>P</td>
+    
+  </tr>
+<td>1</td>
+<td></td>
