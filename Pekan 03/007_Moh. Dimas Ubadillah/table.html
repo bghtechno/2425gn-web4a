@@ -1,0 +1,113 @@
+<!-- Membuka tabel kosong tanpa isi -->
+<table>....</table>
+
+<!-- Membuka tabel kedua dengan satu baris, tetapi tidak ada isi dalam sel -->
+<table>
+  <tr>..</tr>
+</table>
+
+<!-- Membuka tabel ketiga dengan satu baris header -->
+<table>
+  <tr>
+    <td>No</td> <!-- Kolom pertama dengan judul "No" -->
+    <td>Nama</td> <!-- Kolom kedua dengan judul "Nama" -->
+    <td>Alamat</td> <!-- Kolom ketiga dengan judul "Alamat" -->
+  </tr>
+</table>
+
+<!-- Membuka tabel keempat dengan border -->
+<table border=1>
+  <tr>
+    <td rowspan="2">No</td> <!-- Sel ini digabung (rowspan) hingga 2 baris ke bawah -->
+    <td colspan="2">Jenis Kelamin</td> <!-- Sel ini digabung (colspan) hingga 2 kolom ke samping -->
+    <td rowspan="2">Nama</td> <!-- Sel ini digabung (rowspan) hingga 2 baris ke bawah -->
+  </tr>
+  <tr>
+    <td>L</td> <!-- Kolom untuk jenis kelamin laki-laki -->
+    <td>P</td> <!-- Kolom untuk jenis kelamin perempuan -->
+  </tr>
+  <tr>
+    <td>1</td> <!-- Data untuk nomor (seharusnya angka bukan "i") -->
+    <td>L</td> <!-- Data untuk laki-laki -->
+    <td></td> <!-- Tidak ada data untuk perempuan -->
+    <td>Dimas</td> <!-- Nama orang -->
+  </tr>
+</table>
+
+<!-- Membuka tabel kelima dengan border -->
+<table border=1>
+  <head>
+    <!-- Kesalahan: Tidak boleh menggunakan <head> di dalam tabel, seharusnya <thead> -->
+    <tr>
+      <td rowspan="2">No</td> <!-- Sel ini digabung (rowspan) hingga 2 baris ke bawah -->
+      <td colspan="2">Jenis Kelamin</td> <!-- Sel ini digabung (colspan) hingga 2 kolom ke samping -->
+      <td rowspan="2">Nama</td> <!-- Sel ini digabung (rowspan) hingga 2 baris ke bawah -->
+    </tr>
+    <tr>
+      <td>L</td> <!-- Kolom untuk jenis kelamin laki-laki -->
+      <td>P</td> <!-- Kolom untuk jenis kelamin perempuan -->
+    </tr>
+  </head>
+  <!-- <head> dalam tabel tidak valid, sebaiknya diganti <thead> -->
+
+  <tbody>
+    <br> <!-- Kesalahan: <br> tidak boleh digunakan dalam <tbody>, tidak berpengaruh -->
+    <tr>
+      <td>1</td> <!-- Data untuk nomor -->
+      <td>L</td> <!-- Data untuk laki-laki -->
+      <td></td> <!-- Tidak ada data untuk perempuan -->
+      <td>Dimas</td> <!-- Nama orang -->
+    </tr>
+  </tbody>
+</table>
+
+<!-- Menambahkan jeda baris -->
+<br>
+
+<!-- Membuka form untuk pendaftaran -->
+<form>
+  <h1>Formulir Pendaftaran</h1> <!-- Judul formulir -->
+</form>
+<!-- Form ini tidak memiliki input field, jadi tidak dapat digunakan untuk mendaftar -->
+
+<!-- Menambahkan jeda baris -->
+<br><br>
+
+<!-- Label untuk input nama -->
+<label for="nama">Nama Lengkap:</label>
+<input type="text" nama="nama"> <br> <br>
+<!-- Kesalahan: Atribut "nama" harusnya "name" agar input bisa terbaca dalam pengolahan data -->
+
+<!-- Label untuk input alamat -->
+<label for="alamat">Alamat Lengkap:</label>
+<textarea name="alamat"></textarea> <!-- Input area untuk alamat -->
+<br><br>
+
+<!-- Dropdown untuk memilih kota -->
+<select name="kota">
+  <option>Bangkalan</option>
+  <option>Kamal</option>
+  <option>Jakarta</option>
+</select>
+
+<!-- Tombol submit untuk mengirim data -->
+<input type="submit" value="Kirimkan Data">
+
+<br><br>
+
+<!-- Struktur HTML lengkap -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Judul File Html</title> <!-- Judul halaman -->
+  </head>
+  <body>
+    <!-- Kesalahan: Tag <b> salah tempat, seharusnya ada di dalam <h1> -->
+    <h1><b>SELAMAT DATANG DI WEBSITE SAYA</b></h1>
+    
+    <!-- Link untuk membuka halaman latihan HTML -->
+    <a href="latihan1.html">Buka Latihan HTML1</a><br>
+    <a href="latihan2.html">Buka Latihan HTML2</a><br>
+    <a href="index.html">Kembali Ke Halaman Utama</a>
+  </body>
+</html>
