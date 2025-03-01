@@ -1,3 +1,3 @@
 Prewiew
 
-![Preview](images/image.png)
+![Preview](image/image.png)
