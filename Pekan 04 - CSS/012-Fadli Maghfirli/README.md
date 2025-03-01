@@ -1,7 +1,13 @@
 <h1>Prewiew</h1>
 <hr>
 
-<h3>Tanpa CSS</h3>
-<img src="image/prewiew1.png" alt="Tanpa CSS">
-<h3>Dengan CSS</h3>
-<img src="image/prewiew2.png" alt="Dengan CSS">
+<div style="display: flex; justify-content: center;">
+  <div class="kiri">
+    <img src="image/preview1.png" width="40% alt="Tanpa CSS"">
+    <p>Tanpa CSS</p>
+  </div>
+  <div class="kanan">
+    <img src="image/preview2.png" width="40%" alt="Dengan CSS">
+    <p>Dengan CSS</p>
+  </div>
+</div>
