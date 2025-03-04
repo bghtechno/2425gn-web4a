@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8"> <!-- Menentukan karakter encoding untuk halaman -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Membuat tampilan responsif pada perangkat mobile -->
+    <title>Presensi Mahasiswa</title> <!-- Judul halaman -->
+    <style>
+        /* Styling untuk tampilan halaman */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        table {
+            width: 100%; /* Mengatur lebar tabel agar memenuhi halaman */
+            border-collapse: collapse; /* Menghilangkan jarak antar garis tabel */
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black; /* Menambahkan border pada tabel */
+        }
+        th, td {
+            padding: 10px; /* Menambahkan ruang dalam sel tabel */
+            text-align: left; /* Menyelaraskan teks ke kiri */
+        }
+    </style>
+</head>
+<body>
+    <h2>Form Presensi Mahasiswa</h2>
+    <form id="presensiForm">
+        <!-- Input untuk Nama -->
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+        
+        <!-- Input untuk NIM -->
+        <label for="nim">NIM:</label>
+        <input type="text" id="nim" name="nim" required>
+        
+        <!-- Input untuk Tanggal -->
+        <label for="tanggal">Tanggal:</label>
+        <input type="date" id="tanggal" name="tanggal" required>
+        
+        <!-- Tombol untuk menambahkan data ke tabel -->
+        <button type="button" onclick="tambahPresensi()">Tambah</button>
+    </form>
+    
+    <h2>Daftar Presensi</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th> <!-- Kolom untuk Nama -->
+                <th>NIM</th> <!-- Kolom untuk NIM -->
+                <th>Tanggal</th> <!-- Kolom untuk Tanggal -->
+            </tr>
+        </thead>
+        <tbody id="tabelPresensi">
+            <!-- Data presensi akan ditambahkan di sini -->
+        </tbody>
+    </table>
+    
+    <script>
+        function tambahPresensi() {
+            // Mengambil nilai dari input form
+            var nama = document.getElementById("nama").value;
+            var nim = document.getElementById("nim").value;
+            var tanggal = document.getElementById("tanggal").value;
+            
+            // Validasi apakah semua input sudah diisi
+            if(nama && nim && tanggal) {
+                var tabel = document.getElementById("tabelPresensi"); // Mengambil referensi tabel
+                var barisBaru = tabel.insertRow(); // Menambahkan baris baru ke tabel
+                
+                // Menambahkan sel baru ke dalam baris dan mengisi dengan data
+                barisBaru.insertCell(0).innerText = nama;
+                barisBaru.insertCell(1).innerText = nim;
+                barisBaru.insertCell(2).innerText = tanggal;
+                
+                // Mengosongkan kembali form setelah data ditambahkan
+                document.getElementById("presensiForm").reset();
+            } else {
+                alert("Harap isi semua data!"); // Menampilkan pesan jika ada input yang kosong
+            }
+        }
+    </script>
+</body>
+</html>
