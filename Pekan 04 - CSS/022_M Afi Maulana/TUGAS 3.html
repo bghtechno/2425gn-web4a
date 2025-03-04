@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8"> <!-- Menentukan karakter encoding untuk halaman -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Membuat tampilan responsif pada perangkat mobile -->
+    <title>Presensi Mahasiswa</title> <!-- Judul halaman -->
+    <style>
+        /* Styling untuk tampilan halaman secara keseluruhan */
+        body {
+            font-family: Arial, sans-serif; /* Menggunakan font Arial */
+            margin: 20px; /* Memberikan jarak luar (margin) 20px */
+            padding: 20px; /* Memberikan padding 20px */
+            background-color: #f4f4f4; /* Memberikan warna latar belakang abu-abu terang */
+        }
+
+        /* Styling untuk form input */
+        form {
+            background: #fff; /* Memberikan warna latar belakang putih pada form */
+            padding: 20px; /* Memberikan padding 20px agar tidak terlalu rapat */
+            border-radius: 8px; /* Membuat sudut form menjadi melengkung */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan efek bayangan */
+        }
+
+        label {
+            display: block; /* Mengatur label agar berada di baris yang berbeda */
+            margin-top: 10px; /* Menambahkan jarak atas */
+            font-weight: bold; /* Membuat teks label menjadi tebal */
+        }
+
+        input {
+            width: 100%; /* Mengatur input agar memenuhi lebar container */
+            padding: 8px; /* Menambahkan padding agar teks lebih nyaman diketik */
+            margin-top: 5px; /* Menambahkan jarak atas */
+            border: 1px solid #ccc; /* Menambahkan border abu-abu */
+            border-radius: 4px; /* Membuat sudut input lebih melengkung */
+        }
+
+        /* Styling untuk tombol */
+        button {
+            background-color: #28a745; /* Warna hijau untuk tombol */
+            color: white; /* Warna teks putih */
+            padding: 10px 15px; /* Padding agar lebih nyaman diklik */
+            border: none; /* Menghilangkan border */
+            border-radius: 4px; /* Membuat sudut tombol melengkung */
+            margin-top: 10px; /* Menambahkan jarak atas */
+            cursor: pointer; /* Mengubah kursor menjadi tangan saat diarahkan */
+        }
+
+        button:hover {
+            background-color: #218838; /* Mengubah warna tombol saat hover */
+        }
+
+        /* Styling untuk tabel */
+        table {
+            width: 100%; /* Mengatur lebar tabel agar memenuhi halaman */
+            border-collapse: collapse; /* Menghilangkan jarak antar garis tabel */
+            margin-top: 20px; /* Menambahkan jarak atas */
+            background: #fff; /* Warna latar belakang putih */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+            border-radius: 8px; /* Sudut melengkung */
+            overflow: hidden; /* Agar border-radius berfungsi pada tabel */
+        }
+
+        th, td {
+            padding: 10px; /* Menambahkan ruang dalam sel tabel */
+            text-align: left; /* Menyelaraskan teks ke kiri */
+            border: 1px solid black; /* Menambahkan border pada tabel */
+        }
+
+        th {
+            background-color: #007bff; /* Warna latar belakang header tabel */
+            color: white; /* Warna teks putih */
+        }
+    </style>
+</head>
+<body>
+    <h2>Form Presensi Mahasiswa</h2>
+    <form id="presensiForm">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+        
+        <label for="nim">NIM:</label>
+        <input type="text" id="nim" name="nim" required>
+        
+        <label for="tanggal">Tanggal:</label>
+        <input type="date" id="tanggal" name="tanggal" required>
+        
+        <button type="button" onclick="tambahPresensi()">Tambah</button>
+    </form>
+    
+    <h2>Daftar Presensi</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>NIM</th>
+                <th>Tanggal</th>
+            </tr>
+        </thead>
+        <tbody id="tabelPresensi">
+        </tbody>
+    </table>
+    
+    <script>
+        function tambahPresensi() {
+            var nama = document.getElementById("nama").value;
+            var nim = document.getElementById("nim").value;
+            var tanggal = document.getElementById("tanggal").value;
+            
+            if(nama && nim && tanggal) {
+                var tabel = document.getElementById("tabelPresensi");
+                var barisBaru = tabel.insertRow();
+                
+                barisBaru.insertCell(0).innerText = nama;
+                barisBaru.insertCell(1).innerText = nim;
+                barisBaru.insertCell(2).innerText = tanggal;
+                
+                document.getElementById("presensiForm").reset();
+            } else {
+                alert("Harap isi semua data!");
+            }
+        }
+    </script>
+</body>
+</html>
