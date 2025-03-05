@@ -1,9 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir dan Tabel</title>
+</head>
+<body>
+    <!-- Membuka tabel kosong tanpa isi -->
+    <table></table>
 
-<table> 
-  <tr> 
-    <td>Nama</td>
-    <td>NIM</td>
-    <td>Kelas</td>
-    <td>Alamat</td>
-  </tr>
-</table>
+    <!-- Membuka tabel kedua dengan satu baris, tetapi tidak ada isi dalam sel -->
+    <table>
+        <tr></tr>
+    </table>
+
+    <!-- Membuka tabel ketiga dengan satu baris header -->
+    <table border="1">
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Alamat</th>
+        </tr>
+    </table>
+
+    <!-- Membuka tabel keempat dengan border dan gabungan sel -->
+    <table border="1">
+        <tr>
+            <th rowspan="2">No</th>
+            <th colspan="2">Jenis Kelamin</th>
+            <th rowspan="2">Nama</th>
+        </tr>
+        <tr>
+            <th>L</th>
+            <th>P</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>L</td>
+            <td></td>
+            <td>Salman</td>
+        </tr>
+    </table>
+
+    <h1>Formulir Data</h1>
+    <form>
+        <label for="fullname">Nama Lengkap:</label>
+        <input type="text" name="fullname" required><br><br>
+        
+        <label for="address">Alamat:</label>
+        <textarea name="address" required></textarea><br><br>
+        
+        <label for="city">Kota:</label>
+        <select name="city">
+            <option>Bangkalan</option>
+            <option>Burneh/option>
+            <option>Surabaya</option>
+        </select><br><br>
+        
+        <input type="submit" value="Kirim">
+    </form>
+    
+    <h1>Data Pengguna</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Alamat</th>
+                <th>Kota</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Aldi</td>
+                <td>Perum Halim</td>
+                <td>Burneh</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nadin</td>
+                <td>Jl. Halim Perdanakusuma</td>
+                <td>Bangkalan</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <br>
+    <a href="halaman1.html">Buka Halaman 1</a><br>
+    <a href="halaman2.html">Buka Halaman 2</a><br>
+    <a href="index.html">Kembali ke Beranda</a>
+</body>
+</html>
