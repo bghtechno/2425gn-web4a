@@ -7,18 +7,20 @@
     	color: red;
         text-align: center;
     }
-    
     p {
     	color: purple;
-        text-indent: 1.27cm;
-        text-align: justify;
+    }
+    p.solid {
+    	border-style: solid;
+        border-color: black;
     }
     </style>
 </head>
 <body>
     <h1>Apa Itu <i>HTML</i>?</h1>
     
-    <p>
+    <div style="text-indent:1.27cm" align="justify">
+    	<p class="solid">
             HTML (<i>Hypertext Markup Language</i>) adalah bahasa markup standar yang digunakan untuk membuat dan merancang struktur halaman web.
             Bahasa ini menggunakan elemen atau tag untuk memberikan instruksi kepada browser tentang bagaimana konten harus ditampilkan,
             seperti teks, gambar, tabel, tautan, dan lainnya. Dokumen HTML biasanya terdiri dari dua bagian utama, yaitu <i>head</i>
@@ -27,9 +29,10 @@
             dengan sebagian besar memiliki pasangan berupa tag pembuka dan penutup. Tag pembuka, seperti &lt;p&gt;, menandai awal sebuah elemen, sementara tag penutup, seperti &lt;/p&gt;, 
             menandai akhirnya. Beberapa tag bersifat self-closing (tidak memerlukan pasangan), seperti &lt;img&gt; untuk gambar atau &lt;br&gt; untuk baris baru.
         </p>
+     </div>
     
     <div style="text-indent:1.27cm" align="justify">
-        <p>
+    	<p class="double">
             Dokumen HTML dimulai dengan deklarasi &lt;!DOCTYPE&gt; yang menentukan versi HTML yang digunakan, diikuti oleh tag utama seperti &lt;html&gt; untuk mendefinisikan dokumen HTML, 
             &lt;head&gt; untuk metadata, dan &lt;body&gt; untuk konten yang terlihat. Selain itu, ada tag penting lainnya seperti &lt;h1&gt; hingga &lt;h6&gt; untuk judul dengan tingkat kepentingan berbeda, 
             &lt;p&gt; untuk paragraf, &lt;a&gt; untuk tautan, dan &lt;ul&gt; atau &lt;ol&gt; untuk daftar. HTML juga mendukung elemen semantik seperti &lt;article&gt;, &lt;section&gt;, dan &lt;footer&gt;, yang membantu mendefinisikan struktur logis dokumen. 
