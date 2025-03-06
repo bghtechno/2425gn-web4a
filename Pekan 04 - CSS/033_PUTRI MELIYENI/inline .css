@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background: linear-gradient(to right, #87CEFA, #FFB6C1); color: black; text-align: center;">
+    <div style="max-width: 800px; margin: auto; padding: 20px; background: rgba(255, 255, 255, 0.8); border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); margin-top: 30px; text-align: justify;">
+        <h1 style="color: #ff69b4; text-align: center;">ABOUT ME</h1>
+        <div style="text-align: center; margin-bottom: 20px;">
+            <img src="putri.jpg" alt="Foto Putri" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;">
+        </div>
+        <h2 style="color: #4682B4; text-align: center;">HALLO SEMUA!!!</h2>
+        <p>Namaku <u>Putri Meliyeni</u>, aku lahir tanggal <u>2 Agustus 2005</u> di Madura tapi aku dibesarkan di Surabaya.</p>
+        <p>Aku anak satu-satunya dari mama papaku yang kemudian menjelma menjadi anak tengah di keluarga mamaku. <br> LUCU SEKALI KAN AKU? ;)</p>
+        
+        <h3 style="color: #4682B4; text-align: center;">MY HOBI ;v</h3>
+        <p>Oke guys, hobiku cuma satu yaitu <u>BACA NOVEL</u>. Wes itu aja, nggak ada yang lain.</p>
+        <p>Andai aja aku orang kaya yang hartanya nggak habis-habis, surgaku udah pasti di Firdaus. <br> BEHHH, nggak bakal aku pusing sama hidup ini. WKWKWKWK.</p>
+        
+        <h3 style="color: #4682B4; text-align: center;">SEMENTARA</h3>
+        <p>Udah dulu ya, Putri Lovers, kita cerita-ceritanya. Soalnya sebenernya aku buat ini karena ada tugas. <br> HAHAHAHA <u>BYEEE SEMUANYAAA</u></p>
+    </div>
+    
+    <footer style="margin-top: 20px; font-size: 14px; text-align: center;">
+        <p>&copy; 2025 My Website</p>
+    </footer>
+</body>
+</html>
 
