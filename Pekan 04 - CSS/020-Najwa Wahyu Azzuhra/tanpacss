@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan CSS Dasar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>APA ITU HTML?</h1>
+    </div>
+
+    <div class="deskripsi">
+        <div class="paragraf1">
+            <p>
+                HTML adalah singkatan dari (HyperTextMarkupLanguage), yaitu bahasa (aturan) standar yang digunakan untuk
+                menampilkan teks, gambar, video dan audio ke dalam halaman web. HTML merupakan file teks yang tersusun
+                atas elemen-elemen yang disebut dengan tag. Tag HTML diawali dengan tanda lebih kecil (<) dan tanda
+                    lebih besar (>), misalnya: <code>&lthtml&gt</code>, <code>&lthead&gt</code>, code>&ltbody&gt</code>,
+                    <code>&ltp&gt</code>, dan lain-lain. Tag HTML ada yang miiliki pasangan, ada juga yang tidak. Jika
+                    suatu tag miiliki pasangan, maka tag penutup akan disertai dengan tanda slash (/), misalnya:
+                    <code>&lt/html&gt</code>, <code>&lt/head&gt</code>, <code>&lt/body&gt</code>, <code>&lt/p&gt</code>,
+                    dan lain-lain.
+            </p>
+        </div>
+        <div class="paragraf2">
+            <p>
+                Dokumen atau file HTML dapat dibuat menggunakan aplikasi Text Editor apa saja, dan disimpan dengan
+                ekstensi <strong>.html</strong> atau <strong>.htm</strong>. Untuk miudahkan proses belajar Anda, penulis
+                merekomendasikan agar Anda menggunakan Text Editor yang secara khusus dirancang untuk menulis kode-kode
+                HTML. Saat ini banyak software Text Editor untuk HTML yang ditawarkan secara gratis di Internet.
+            </p>
+        </div>
+    </div>
+
+    <div class="dafpus">
+        <h2>Daftar Pustaka :</h2>
+
+        <ol>
+            <li>
+                <a href="">https://elektronika-dasar.web.id/teori-elektronika/prinsip-kerja-motor-dc/</a>
+            </li>
+            <li>
+                <a href="">Nurdiansyah, Ryan (2011) Perancangan Dan Implementasi Sistem Absensi menggunakan RFID,
+                    Bandung: Tugas Akhir</a>
+            </li>
+        </ol>
+    </div>
+
+    <h2>TUGAS PERTAMAKU</h2>
+
+</body>
+
+</html>
