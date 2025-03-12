@@ -1,43 +1,88 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<title>PARAGRAF </title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARAGRAF</title>
+    
+    <!-- CSS Eksternal -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- CSS Internal -->
+    <style>
+        /* Styling untuk seluruh halaman */
+                body {
+                    font-family: Arial, sans-serif; /* Menggunakan font Arial untuk tampilan yang lebih bersih */
+                    background-color: #f9f9f9; /* Memberikan warna latar belakang halaman */
+                    margin: 20px; /* Memberikan jarak dari tepi browser */
+                    padding: 20px; /* Memberikan ruang di dalam elemen body */
+                }
+
+                /* Styling untuk judul utama */
+                h2 {
+                    color: darkblue; /* Warna teks biru tua untuk judul */
+                    text-align: center; /* Menengahkan teks */
+                }
+
+                /* Styling untuk daftar pustaka */
+                ol {
+                    background-color: #e6e6e6; /* Warna latar belakang daftar */
+                    padding: 10px; /* Memberikan jarak dalam daftar */
+                    border-radius: 5px; /* Membuat sudut daftar menjadi lebih membulat */
+                }
+
+                /* Styling untuk setiap elemen dalam daftar */
+                ol li {
+                    font-style: italic; /* Membuat teks dalam daftar menjadi miring */
+                    margin: 5px 0; /* Memberikan jarak antar elemen daftar */
+                }
+
+                /* Styling untuk elemen kode HTML */
+                code {
+                    background-color: lightgray; /* Warna latar belakang kode agar lebih mencolok */
+                    padding: 2px; /* Memberikan ruang di sekitar teks */
+                    border-radius: 3px; /* Membulatkan sudut elemen kode */
+                }
+
+                /* Styling untuk kotak konten utama */
+                .box {
+                    background-color: white; /* Warna latar belakang putih */
+                    padding: 20px; /* Memberikan ruang dalam kotak */
+                    border-radius: 10px; /* Membuat sudut kotak lebih membulat */
+                    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Memberikan efek bayangan halus */
+                }
+
+    </style>
 </head>
+
 <body>
-    WEBSITE <strong><em>PERTAMA</em></strong> SAYA
-    <h2>
-        <div align ="center">
-            <b><div style="font-size: 45px;"> APA ITU <i>HTML</i>?</div></b>
-        </div>
-    </h2>
-    <p><div style="text-indent: 1.27cm" align="justify" >
-       <h2>HTML <s>adalah singkatan dari</s> (<i><b>H</b>yper<b>T</b>ext<b>M</b>arkup<b>L</b>anguage</i>), yaitu bahasa (aturan) standar yang digunakan 
-        untuk menampilkan teks, gambar, video dan audio ke dalam halaman <i>web</i>. HTML merupakan <i>file</i> teks yang tersusun atas elemen-elemen
-        yang disebut dengan <i>tag</i>. <i>Tag</i> HTML diawali dengan tanda lebih kecil (<) dan tanda lebih besar (>), misalnya: <code><b>&lthtml&gt</code></b>,
-        <b><code>&lthead&gt</code></b>, <b><code>&ltbody&gt</code></b>, <b><code>&ltp&gt</code></b>, dan lain-lain. <i>Tag</i> HTML ada yang miiliki pasangan, ada juga yang tidak. 
-        Jika suatu <i>tag</i> miiliki pasangan, maka <i>tag</i> penutup akan disertai dengan tanda <i>slash</i> (/), misalnya: <code>&lt/html&gt</code>,
-         <code>&lt/head&gt</code>, <code>&lt/body&gt</code>, <code>&lt/p&gt</code>, dan lain-lain.
-    </div></p></h2> 
-    <div style="text-indent: 1.27cm" align="justify">
-        Dokumen atau <i>file</i> HTML dapat dibuat menggunakan aplikasi <i>Text Editor</i> apa saja, dan disimpan dengan ekstensi <strong>.html</strong> atau <strong>.htm</strong>. 
-        Untuk miudahkan proses belajar Anda, penulis merekomendasikan agar Anda menggunakan <i>Text Editor</i> yang secara khusus dirancang untuk menulis kode-kode <i>HTML</i>. 
-        Saat ini banyak <i>software Text Editor</i> untuk <i>HTML</i> yang ditawarkan secara gratis di Internet.
+
+    <div class="box">
+        <h1 align="center" style="color: darkred; font-size: 30px;">WEBSITE <strong><em>PERTAMA</em></strong> SAYA</h1>
+
+        <h2>APA ITU <i>HTML</i>?</h2>
+
+        <p style="text-indent: 1.27cm; text-align: justify;">
+            <b>HTML</b> (<i><b>H</b>yper<b>T</b>ext<b>M</b>arkup<b>L</b>anguage</i>) adalah bahasa standar yang digunakan 
+            untuk menampilkan teks, gambar, video, dan audio di halaman web. HTML terdiri dari elemen-elemen 
+            yang disebut dengan <i>tag</i>. Setiap <i>tag</i> HTML diawali dengan tanda kurang dari (<) dan lebih dari (>), 
+            misalnya: <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code>, dan <code>&lt;p&gt;</code>.
+        </p>
+
+        <p style="text-indent: 1.27cm; text-align: justify;">
+            Dokumen HTML dapat dibuat menggunakan aplikasi <i>Text Editor</i> apa saja dan disimpan dengan ekstensi 
+            <strong>.html</strong> atau <strong>.htm</strong>. Untuk mempermudah belajar, disarankan menggunakan <i>Text Editor</i> 
+            khusus untuk HTML yang tersedia gratis di Internet.
+        </p>
+
+        <h3 style="color: darkgreen;">Daftar Pustaka:</h3>
+        <ol>
+            <li>http://elektronika-dasar.web.id/teori-elektronika/prinsip-kerja-motor-dc/</a></li>
+            <li>Nurdiansyah, Ryan (2011) Perancangan dan Implementasi Sistem Absensi menggunakan RFID, Bandung: Tugas Akhir</li>
+        </ol>
     </div>
-    <br>          
-    <u style="font-size: 18px;"><b>Daftar Pustaka:</b></u>
-    <br>
-    <ol>
-       <li> http://elektronika-dasar.web.id/teori-elektronika/prinsip-kerja-motor-dc/ </li>
-       <li> Nurdiansyah, Ryan (2011) Perancangan Dan Implementasi Sistem Absensi menggunakan RFID, Bandung: Tugas Akhir </li>
-    </ol>
-    <marquee direction="left" behavior="alternate">
- 
-    </marquee>
-        <h2>
-            <div align ="center">
-                <b><div style="font-size: 45px; color: red;">TUGAS PERTAMAKU </div></b>
-            </div>
-        </h2>
+
+    <h2 style="color: red; text-align: center;">TUGAS PERTAMAKU</h2>
+
 </body>
 </html>
