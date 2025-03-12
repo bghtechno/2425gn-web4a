@@ -5,48 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabel Sederhana</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 20px;
-        }
+        /* Gaya dasar untuk tabel */
         table {
-            width: 50%;
-            margin: auto;
-            border-collapse: collapse;
+            width: 50%; /* Lebar tabel 50% dari halaman */
+            margin: auto; /* Supaya tabel ada di tengah */
+            border-collapse: collapse; /* Menggabungkan border jadi satu */
         }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-        }
+
+        /* Gaya untuk header tabel */
         th {
-            background-color: #f4f4f4;
+            background-color: #007BFF; /* Warna biru */
+            color: white; /* Warna teks putih */
+            padding: 10px; /* Ruang dalam sel */
+        }
+
+        /* Gaya untuk sel data */
+        td {
+            padding: 10px; /* Ruang dalam sel */
+            border: 1px solid black; /* Garis border hitam */
+            text-align: center; /* Teks rata tengah */
         }
     </style>
 </head>
 <body>
 
-    <h2>Data Sederhana</h2>
+    <h2 style="text-align: center;">Tabel Nama</h2>
+
     <table>
+        <!-- Baris header -->
         <tr>
-            <th>No</th>
-            <th>Nama</th>
-            <th>Usia</th>
+            <th>No</th> <!-- Kolom nomor -->
+            <th>Nama</th> <!-- Kolom nama -->
         </tr>
+        
+        <!-- Baris data (isinya namamu semua) -->
         <tr>
             <td>1</td>
-            <td>Budi</td>
-            <td>25</td>
+            <td>Ahmad Yusril Ihsan Sya'bana</td>
         </tr>
         <tr>
             <td>2</td>
-            <td>Ani</td>
-            <td>23</td>
+            <td>Ahmad Yusril Ihsan Sya'bana</td>
         </tr>
         <tr>
             <td>3</td>
-            <td>Rudi</td>
-            <td>27</td>
+            <td>Ahmad Yusril Ihsan Sya'bana</td>
         </tr>
     </table>
 
