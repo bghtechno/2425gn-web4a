@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presensi Mahasiswa</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 20px; padding: 20px; background-color: #f4f4f4;">
+    <h2>Form Presensi Mahasiswa</h2>
+    <form id="presensiForm" style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <label for="nama" style="display: block; margin-top: 10px; font-weight: bold;">Nama:</label>
+        <input type="text" id="nama" name="nama" required style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px;">
+        
+        <label for="nim" style="display: block; margin-top: 10px; font-weight: bold;">NIM:</label>
+        <input type="text" id="nim" name="nim" required style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px;">
+        
+        <label for="tanggal" style="display: block; margin-top: 10px; font-weight: bold;">Tanggal:</label>
+        <input type="date" id="tanggal" name="tanggal" required style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px;">
+        
+        <button type="button" onclick="tambahPresensi()" style="background-color: #28a745; color: white; padding: 10px 15px; border: none; border-radius: 4px; margin-top: 10px; cursor: pointer;">Tambah</button>
+    </form>
+    
+    <h2>Daftar Presensi</h2>
+    <table style="width: 100%; border-collapse: collapse; margin-top: 20px; background: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+        <thead>
+            <tr>
+                <th style="padding: 10px; text-align: left; border: 1px solid black; background-color: #007bff; color: white;">Nama</th>
+                <th style="padding: 10px; text-align: left; border: 1px solid black; background-color: #007bff; color: white;">NIM</th>
+                <th style="padding: 10px; text-align: left; border: 1px solid black; background-color: #007bff; color: white;">Tanggal</th>
+            </tr>
+        </thead>
+        <tbody id="tabelPresensi">
+        </tbody>
+    </table>
+    
+    <script>
+        function tambahPresensi() {
+            var nama = document.getElementById("nama").value;
+            var nim = document.getElementById("nim").value;
+            var tanggal = document.getElementById("tanggal").value;
+            
+            if(nama && nim && tanggal) {
+                var tabel = document.getElementById("tabelPresensi");
+                var barisBaru = tabel.insertRow();
+                
+                barisBaru.insertCell(0).innerText = nama;
+                barisBaru.insertCell(1).innerText = nim;
+                barisBaru.insertCell(2).innerText = tanggal;
+                
+                document.getElementById("presensiForm").reset();
+            } else {
+                alert("Harap isi semua data!");
+            }
+        }
+    </script>
+</body>
+</html>
