@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: mistyrose;
+}
+
+.header {
+    background-color: rgb(182, 187, 255);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.container {
+    margin: 20px 0;
+}
+
+.content {
+    background-color: rgb(162, 204, 252);
+    padding: 15px;
+    border-radius: 10px;
+    color: black;
+}
+
+.footer {
+    border-top: 2px solid rgb(135, 170, 245);
+    padding-top: 10px;
+}
+
+.footer a {
+    color: rgb(147, 149, 243);
+}
