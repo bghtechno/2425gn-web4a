@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presensi Mahasiswa</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Menghubungkan file CSS eksternal -->
+</head>
+<body>
+    <h2>Form Presensi Mahasiswa</h2>
+    <form id="presensiForm">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+        
+        <label for="nim">NIM:</label>
+        <input type="text" id="nim" name="nim" required>
+        
+        <label for="tanggal">Tanggal:</label>
+        <input type="date" id="tanggal" name="tanggal" required>
+        
+        <button type="button" onclick="tambahPresensi()">Tambah</button>
+    </form>
+    
+    <h2>Daftar Presensi</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>NIM</th>
+                <th>Tanggal</th>
+            </tr>
+        </thead>
+        <tbody id="tabelPresensi">
+        </tbody>
+    </table>
+    
+    <script>
+        function tambahPresensi() {
+            var nama = document.getElementById("nama").value;
+            var nim = document.getElementById("nim").value;
+            var tanggal = document.getElementById("tanggal").value;
+            
+            if(nama && nim && tanggal) {
+                var tabel = document.getElementById("tabelPresensi");
+                var barisBaru = tabel.insertRow();
+                
+                barisBaru.insertCell(0).innerText = nama;
+                barisBaru.insertCell(1).innerText = nim;
+                barisBaru.insertCell(2).innerText = tanggal;
+                
+                document.getElementById("presensiForm").reset();
+            } else {
+                alert("Harap isi semua data!");
+            }
+        }
+    </script>
+</body>
+</html>
