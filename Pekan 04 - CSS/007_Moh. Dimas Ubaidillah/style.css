@@ -1,11 +1,75 @@
+/* ====== STYLE UMUM UNTUK SELURUH HALAMAN ====== */
 body {
-    background-color: lightblue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 30px ;
-    
-  }
-  
-  h2 {
-    color: navy;
-    margin-left: 20px;
-  }
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* ====== JUDUL UTAMA ====== */
+h2 {
+  color: rgb(139, 0, 0);
+  text-align: center;
+}
+
+/* ====== PARAGRAF ====== */
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+  text-indent: 1.27cm;
+}
+
+/* ====== DAFTAR PUSTAKA ====== */
+ol {
+  background-color: #e6e6e6;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+ol li {
+  margin: 5px 0;
+  font-style: italic;
+}
+
+/* ====== TEKS DALAM MARQUEE ====== */
+marquee {
+  font-size: 20px;
+  color: green;
+}
+
+/* ====== TEKS STRONG DAN EM ====== */
+strong, em {
+  color: darkred;
+  font-size: 20px;
+}
+
+/* ====== TEKS YANG DIBERI GARIS BAWAH (U) ====== */
+u {
+  text-decoration: underline;
+  color: darkgreen;
+}
+
+/* ====== TEKS DALAM KODE (CODE) ====== */
+code {
+  background-color: lightgray;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+/* ====== STYLE UNTUK BAGIAN TERTENTU YANG MEMBUTUHKAN INLINE DI CSS ====== */
+.centered-text {
+  text-align: center;
+  font-size: 45px;
+}
+
+.highlight-box {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.red-title {
+  font-size: 45px;
+  color: red;
+}
