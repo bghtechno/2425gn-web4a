@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraf - HTML</title>
+    <style>
+        /* Mengatur tampilan dasar halaman */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+            padding: 20px;
+        }
+        
+        /* Mengatur tampilan judul dan highlight agar lebih menonjol */
+        .judul, .highlight {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        /* Mengatur tampilan paragraf agar lebih rapi dan mudah dibaca */
+        .paragraf {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        /* Mengatur warna dan efek hover untuk tautan */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Mengatur tampilan teks bergerak (marquee) */
+        marquee {
+            font-size: 18px;
+            color: #d9534f;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        <div class="judul">APA ITU <i>HTML</i>?</div>
+    </h2>
+    
+    <!-- Paragraf penjelasan mengenai HTML -->
+    <div class="paragraf" style="text-indent: 1.27cm; text-align: justify;">
+        HTML (<i><b>H</b>yper<b>T</b>ext <b>M</b>arkup <b>L</b>anguage</i>) adalah bahasa standar yang digunakan untuk menampilkan teks, gambar, video, dan audio di dalam halaman <i>web</i>. HTML merupakan <i>file</i> teks yang tersusun atas elemen-elemen yang disebut dengan <i>tag</i>. <i>Tag</i> HTML diawali dengan tanda lebih kecil (<code>&lt;</code>) dan tanda lebih besar (<code>&gt;</code>), misalnya: <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code>, dan <code>&lt;p&gt;</code>. 
+    </div>
+    
+    <!-- Paragraf penjelasan mengenai tag HTML -->
+    <div class="paragraf" style="text-indent: 1.27cm; text-align: justify;">
+        <i>Tag</i> HTML ada yang memiliki pasangan dan ada juga yang tidak. Jika suatu <i>tag</i> memiliki pasangan, maka <i>tag</i> penutup akan disertai dengan tanda <i>slash</i> (<code>/</code>), misalnya: <code>&lt;/html&gt;</code>, <code>&lt;/head&gt;</code>, <code>&lt;/body&gt;</code>, dan <code>&lt;/p&gt;</code>.
+    </div>
+    
+    <!-- Paragraf penjelasan mengenai pembuatan file HTML -->
+    <div class="paragraf" style="text-indent: 1.27cm; text-align: justify;">
+        Dokumen atau <i>file</i> HTML dapat dibuat menggunakan aplikasi <i>Text Editor</i> apa saja dan disimpan dengan ekstensi <strong>.html</strong> atau <strong>.htm</strong>. Untuk memudahkan proses belajar, disarankan menggunakan <i>Text Editor</i> yang dirancang khusus untuk menulis kode HTML. Saat ini, banyak <i>software Text Editor</i> untuk HTML yang tersedia secara gratis di internet.
+    </div>
+    
+    <!-- Daftar pustaka sebagai referensi -->
+    <b>Daftar Pustaka:</b>
+    <ol>
+        <li><a href="http://elektronika-dasar.web.id/teori-elektronika/prinsip-kerja-motor-dc/">http://elektronika-dasar.web.id/teori-elektronika/prinsip-kerja-motor-dc/</a></li>
+        <li>Nurdiansyah, Ryan (2011) Perancangan dan Implementasi Sistem Absensi menggunakan RFID, Bandung: Tugas Akhir</li>
+    </ol>
+    
+    <!-- Teks berjalan menggunakan marquee -->
+    <marquee direction="left" behavior="alternate">Selamat datang di halaman HTML pertama saya!</marquee>
+    
+    <h2>
+        <div class="highlight">TUGAS PERTAMAKU</div>
+    </h2>
+</body>
+</html>
