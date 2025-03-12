@@ -5,124 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apa Itu HTML?</title>
     <!-- Import font dari Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        /* Mengatur tampilan dasar halaman */
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        /* Header dengan warna gradien dan teks putih */
-        header {
-            background: linear-gradient(90deg, #0073e6, #00bfa5);
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            font-size: 24px;
-            font-weight: 600;
-        }
-        /* Navigasi dengan tampilan fleksibel */
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #005bb5;
-            padding: 10px;
-        }
-        /* Gaya untuk tautan navigasi */
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 15px;
-            font-size: 18px;
-            font-weight: 500;
-            transition: 0.3s; /* Efek transisi saat hover */
-        }
-        /* Efek hover pada navigasi */
-        nav a:hover {
-            color: #ffcc00;
-            transform: scale(1.1);
-        }
-        /* Kontainer utama */
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            padding: 25px;
-            background: #fff;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        /* Warna untuk judul */
-        h2 {
-            color: #0073e6;
-        }
-        /* Mengatur tampilan tabel */
-        table {
-            width: 50%;
-            border-collapse: collapse; /* Menggabungkan garis border */
-            margin-top: 15px;
-        }
-        /* Mengatur tampilan border tabel dan sel */
-        table, th, td {
-            border: 1px solid #0073e6;
-        }
-        /* Gaya untuk header tabel */
-        th {
-            background: #0073e6;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-        /* Gaya untuk isi tabel */
-        td {
-            padding: 8px;
-            text-align: left;
-        }
-        /* Efek zebra striping untuk baris tabel */
-        tr:nth-child(even) {
-            background: #f0f8ff;
-        }
-        /* Tombol interaktif */
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            margin-top: 15px;
-            background: #0073e6;
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-        /* Efek hover untuk tombol */
-        .btn:hover {
-            background: #005bb5;
-            transform: translateY(-3px);
-        }
-        /* Gaya footer */
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: #333;
-            color: white;
-            margin-top: 20px;
-        }
-        /* Responsif: Menyesuaikan ukuran layar kecil */
-        @media (max-width: 768px) {
-            .container {
-                width: 90%;
-            }
-            nav {
-                flex-direction: column;
-                text-align: center;
-            }
-            table {
-                font-size: 14px; /* Memperkecil teks tabel di layar kecil */
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="mystyle.css">
 </head>
 <body>
     <header>
@@ -180,6 +63,7 @@
                 <td>Tag video, audio, canvas, dan API baru</td>
             </tr>
         </table>
+
         <h2>Daftar Pustaka</h2>
         <ul>
             <li>Berners-Lee, T. (1991). *HTML and the World Wide Web*. CERN.</li>
@@ -188,6 +72,7 @@
         </ul>
         <a href="#" class="btn">Pelajari Lebih Lanjut</a>
     </div>
+
     <footer>
         <p>&copy; 2025 Web HTML 230631100021</p>
     </footer>
