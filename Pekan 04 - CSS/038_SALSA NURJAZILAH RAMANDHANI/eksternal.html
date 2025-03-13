@@ -1,19 +1,72 @@
 body {
-            font-family: "Times New Roman", serif;
-            text-align: justify;
-            margin: 20px;
-            background-color: #121212;
-            color: #ADD8E6;
-            position: relative;
-            overflow: hidden;
-        }
-        h2 {
-            text-align: center;
-            font-size: 48px;
-            border-bottom: 3px solid #ADD8E6;
-            padding-bottom: 10px;
-        }
-        .content {
-            text-indent: 1.27cm;
-            border-left: 5px solid #AD
-
+    font-family: "Times New Roman", serif;
+    text-align: justify;
+    margin: 20px;
+    background-color: #121212;
+    color: #ADD8E6;
+    position: relative;
+    overflow: hidden;
+}
+h2 {
+    text-align: center;
+    font-size: 48px;
+    border-bottom: 3px solid #ADD8E6;
+    padding-bottom: 10px;
+}
+.content {
+    text-indent: 1.27cm;
+    border-left: 5px solid #ADD8E6;
+    padding-left: 10px;
+    border-radius: 10px;
+    background: rgba(173, 216, 230, 0.1);
+    padding: 15px;
+}
+.marquee-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.marquee-text {
+    font-size: 48px;
+    color:#ADD8E6;
+    font-weight: bold;
+    border: 2px solid #ADD8E6;
+    padding: 10px;
+    border-radius: 10px;
+    animation: scrollText 3s infinite alternate ease-in-out;
+}
+@keyframes scrollText {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(20px);
+    }
+}
+.aura {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(173, 216, 230, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
+    animation: auraAnimation 5s infinite alternate ease-in-out;
+}
+@keyframes auraAnimation {
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: rgba(173, 216, 230, 0.1);
+    border-top: 3px solid #ADD8E6;
+        }
