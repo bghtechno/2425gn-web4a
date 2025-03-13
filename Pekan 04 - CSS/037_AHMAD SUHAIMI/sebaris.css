@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apa Itu HTML?</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4;">
+
+    <header style="background: #333; color: #fff; padding: 15px; text-align: center;">
+        <h1>Apa Itu HTML?</h1>
+    </header>
+
+    <nav style="text-align: center; padding: 10px; background: #444;">
+        <a href="#" style="color: #fff; text-decoration: none; margin: 10px; font-size: 18px;">Beranda</a>
+        <a href="#" style="color: #fff; text-decoration: none; margin: 10px; font-size: 18px;">Tentang</a>
+        <a href="#" style="color: #fff; text-decoration: none; margin: 10px; font-size: 18px;">Kontak</a>
+    </nav>
+
+    <div style="width: 80%; margin: 20px auto; padding: 20px; background: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h2 style="color: #333;">Pengertian HTML</h2>
+        <p style="color: #555; line-height: 1.6;">
+            HTML (HyperText Markup Language) adalah bahasa standar yang digunakan untuk membuat dan menyusun halaman web. HTML bekerja dengan menggunakan elemen-elemen yang membentuk struktur halaman web, seperti teks, gambar, tabel, dan tautan.
+        </p>
+
+        <h2 style="color: #333;">Fungsi HTML</h2>
+        <ul>
+            <li style="color: #555;">Menentukan struktur halaman web</li>
+            <li style="color: #555;">Menghubungkan halaman web dengan tautan (hyperlink)</li>
+            <li style="color: #555;">Mengatur tampilan teks, gambar, tabel, dan elemen lainnya</li>
+            <li style="color: #555;">Memudahkan integrasi dengan CSS dan JavaScript</li>
+        </ul>
+
+        <h2 style="color: #333;">Sejarah HTML</h2>
+        <p style="color: #555; line-height: 1.6;">
+            HTML pertama kali dikembangkan oleh Tim Berners-Lee pada tahun 1991 sebagai standar untuk membangun halaman web. Seiring perkembangan teknologi, HTML mengalami banyak pembaruan hingga versi terbaru, yaitu HTML5.
+        </p>
+
+        <h2 style="color: #333;">Daftar Pustaka</h2>
+        <ul>
+            <li style="color: #555;">Berners-Lee, T. (1991). <i>HTML and the World Wide Web</i>. CERN.</li>
+            <li style="color: #555;">Meyer, E. (2018). <i>CSS: The Definitive Guide</i>. O'Reilly Media.</li>
+            <li style="color: #555;">Duckett, J. (2011). <i>HTML & CSS: Design and Build Websites</i>. Wiley.</li>
+        </ul>
+    </div>
+    <footer style="text-align: center; padding: 10px; background: #333; color: white; position: relative; bottom: 0; width: 100%;">
+        <p>&copy; 2025 Web HTML | Dibuat oleh 230631100021</p>
+    </footer>
+</body>
+</html>
