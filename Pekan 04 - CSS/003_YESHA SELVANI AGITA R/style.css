@@ -1,20 +1,11 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <title>HTML???</title>
+body {
+    background-color: lightblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 30px ;
     
-    <style>
-        .judul {
-            color: rgb(79, 174, 233);
-            font-size: 24px;
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
-    <h1>Apa itu HTML</h1>
-    <p>HTML adalah bahasa markup yang digunakan untuk membuat dan mengatur struktur halaman web. 
-        HTML menggunakan elemen-elemen yang disebut dengan tag untuk menampilkan teks, gambar, video, dan berbagai elemen lainnya dalam halaman web.</p>
-    <div class="judul" style="color: rgb(79, 174, 233);">PEMROGRAMAN WEB</div>
-</body>
-</html>
+  }
+  
+  h2 {
+    color: navy;
+    margin-left: 20px;
+  }
