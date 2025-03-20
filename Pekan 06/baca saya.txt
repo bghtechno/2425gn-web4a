@@ -1,1 +1,3 @@
+Tugas Pekan 6 Pemrograman Web
 
+Tugas membuat layout responsif menggunakan Flexbox/Grid, commit ke GitHub.
