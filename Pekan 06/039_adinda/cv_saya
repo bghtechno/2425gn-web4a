@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Adinda Mulya Rahayu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #8a2387);
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        header, footer {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 900px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .konten {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            width: 90%;
+            max-width: 600px;
+            text-align: left;
+        }
+        
+        .konten h2 {
+            color: white;
+            margin-bottom: 10px;
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
+        }
+        
+        .konten table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        
+        .konten td {
+            padding: 8px;
+            vertical-align: top;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            color: white;
+        }
+        
+        .konten td:first-child {
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .konten {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Curriculum Vitae</h1>
+        <p>Adinda Mulya Rahayu</p>
+    </header>
+    
+    <main class="konten">
+        <section id="profil">
+            <h2>Profil</h2>
+            <table>
+                <tr><td>Nama</td><td>: Adinda Mulya Rahayu</td></tr>
+                <tr><td>Alamat</td><td>: Pang Pong</td></tr>
+                <tr><td>Email</td><td>: <a href="mailto:adinda.mulya@gmail.com" style="color: white;">adinda.mulya@gmail.com</a></td></tr>
+                <tr><td>No. HP</td><td>: 081234567890</td></tr>
+            </table>
+        </section>
+        <section id="pendidikan">
+            <h2>Pendidikan</h2>
+            <table>
+                <tr><td>Universitas</td><td>: Universitas Trunojoyo Madura</td></tr>
+                <tr><td>Jurusan</td><td>: Pendidikan Informatika</td></tr>
+            </table>
+        </section>
+        <section id="keahlian">
+            <h2>Keahlian</h2>
+            <table>
+                <tr><td>Video Editing</td></tr>
+                <tr><td>Desain Grafis</td></tr>
+                <tr><td>Jaringan Komputer</td></tr>
+            </table>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Adinda Mulya Rahayu | Curriculum Vitae</p>
+    </footer>
+</body>
+</html>
+
