@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout dengan Flexbox dan Grid</title>
+    <style>
+        /* Reset dasar untuk body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Grid utama untuk seluruh halaman */
+        .container {
+            display: grid;
+            grid-template-rows: auto 1fr auto; /* Header, konten utama, dan footer */
+            grid-template-columns: 1fr;
+            height: 100vh; /* Tinggi penuh layar */
+        }
+        
+        /* Header dan Footer */
+        .header, .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        /* Kontainer utama menggunakan Flexbox */
+        .content {
+            display: flex;
+            flex-direction: row; /* Elemen dalam satu baris */
+            gap: 20px; /* Jarak antar elemen */
+            padding: 20px;
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            flex: 1; /* Sidebar lebih kecil */
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        
+        /* Konten utama */
+        .main-content {
+            flex: 3; /* Konten utama lebih besar */
+            background: #ddd;
+            padding: 20px;
+        }
+        
+        /* Grid dalam bagian utama */
+        .grid-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Grid fleksibel */
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        /* Item dalam grid */
+        .grid-item {
+            background: #666;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Bagian Header -->
+        <header class="header">Header</header>
+        
+        <!-- Bagian Utama dengan Flexbox -->
+        <main class="content">
+            <!-- Sidebar -->
+            <aside class="sidebar">Sidebar</aside>
+            
+            <!-- Konten utama -->
+            <section class="main-content">
+                Main Content
+                
+                <!-- Grid di dalam konten utama -->
+                <div class="grid-section">
+                    <div class="grid-item">Item 1</div>
+                    <div class="grid-item">Item 2</div>
+                    <div class="grid-item">Item 3</div>
+                    <div class="grid-item">Item 4</div>
+                    <div class="grid-item">Item 5</div>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Bagian Footer -->
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>
