@@ -1,1 +1,67 @@
-
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout dengan Flexbox dan Grid</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #99ccff, #3366cc);
+        }
+        .container {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 1fr;
+            height: 100vh;
+        }
+        header, footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+            gap: 20px;
+        }
+        .sidebar {
+            flex: 1 1 200px;
+            background: #6699cc;
+            padding: 20px;
+            color: white;
+        }
+        .main {
+            flex: 3 1 600px;
+            background: #99ccff;
+            padding: 20px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Website Pribadi</h1>
+            <h2>Siti Masruroh</h2>
+        </header>
+        <div class="content">
+            <aside class="sidebar">
+                <h2>Foto Profil</h2>
+                <p>Foto Diri</p>
+            </aside>
+            <main class="main">
+                <h2>Data Pribadi</h2>
+                <p>Biodata</p>
+            </main>
+        </div>
+        <footer>
+            <p>imesssss08@gmail.com</p>
+        </footer>
+    </div>
+</body>
+</html>
