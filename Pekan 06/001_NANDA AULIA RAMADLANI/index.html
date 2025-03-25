@@ -1,1 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Nanda</title>
+  <style>
+    /* Reset & Global */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f4f8;
+      line-height: 1.6;
+      padding: 0 15px;
+    }
+
+    header, footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      flex: 1;
+      min-width: 200px;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      height: fit-content;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar a {
+      display: block;
+      text-decoration: none;
+      color: #333;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+
+    .sidebar a:hover {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    /* Konten */
+    .konten {
+      flex: 3;
+      min-width: 300px;
+      background-color: #ffffff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .konten section {
+      margin-bottom: 30px;
+    }
+
+    .konten h2 {
+      color: #007BFF;
+      margin-bottom: 10px;
+    }
+
+    hr {
+      margin: 20px 0;
+      border: none;
+      border-top: 1px solid #ccc;
+    }
+
+    footer {
+      margin-bottom: 30px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+
+    .sidebar ul {
+     list-style: none;
+    }
+
+    .konten ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .konten table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+.konten td {
+  padding: 4px 6px;
+  vertical-align: top;
+}
+
+.konten td:first-child {
+  width: 180px; /* atur agar rata kiri */
+}
+.konten td:nth-child(2) {
+  width: 10px; /* titik dua */
+}
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Portofolio Nanda Aulia Ramadlani</h1>
+  </header>
+
+  <!-- Konten Utama -->
+  <div class="container">
+    
+    <!-- Sidebar Menu -->
+    <nav class="sidebar">
+      <ul>
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <!-- Konten -->
+    <main class="konten">
+      <section id="beranda">
+        <h2>Halo, aku Nanda!</h2>
+        <p>Selamat datang di websiteku. Ini adalah website sederhana yang menampilkan profil dan portofolio singkatku sebagai mahasiswa Pendidikan Informatika yang punya ketertarikan di bidang desain, fotografi, dan video editing.</p>
+      </section>
+
+      <hr />
+
+      <section id="profil">
+        <h2>Profil</h2>
+        <table>
+          <tr>
+            <td><strong>Nama</strong></td>
+            <td><strong>:</strong></td>
+            <td>Nanda Aulia Ramadlani</td>
+          </tr>
+          <tr>
+            <td><strong>Jurusan</strong></td>
+            <td><strong>:</strong></td>
+            <td>Pendidikan Informatika</td>
+          </tr>
+          <tr>
+            <td><strong>Kampus</strong></td>
+            <td><strong>:</strong></td>
+            <td>Universitas Trunojoyo Madura</td>
+          </tr>
+          <tr>
+            <td><strong>Keahlian</strong></td>
+            <td><strong>:</strong></td>
+            <td>Fotografi, Video Editing</td>
+          </tr>
+          <tr>
+            <td><strong>Software yang dikuasai</strong></td>
+            <td><strong>:</strong></td>
+            <td>Canva, CapCut, Camtasia</td>
+          </tr>
+          <tr>
+            <td><strong>Pengalaman</strong></td>
+            <td><strong>:</strong></td>
+            <td>Desain feed IG himpunan, editing video after report</td>
+          </tr>
+        </table>
+      </section>   
+        
+      </section>
+
+      <hr />
+
+      <section id="kontak">
+        <h2>Kontak</h2>
+        <table>
+          <tr>
+            <td><strong>Email</strong></td>
+            <td><strong>:</strong></td>
+            <td><a href="mailto:nandaaulia_2210@gmail.com">nandaaulia_2210@gmail.com</a></td>
+          </tr>
+          <tr>
+            <td><strong>No HP</strong></td>
+            <td><strong>:</strong></td>
+            <td>085717798597</td>
+          </tr>
+          <tr>
+            <td><strong>Instagram</strong></td>
+            <td><strong>:</strong></td>
+            <td><a href="https://instagram.com/na.nnd_" target="_blank">@na.nnd_</a></td>
+          </tr>
+        </table>
+      </section>       
+    </main>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Hak Cipta &copy; 2025 - Nanda Aulia</p>
+  </footer>
+</body>
+</html>
