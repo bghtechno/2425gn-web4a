@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Flexbox dan Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f3e5f5;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+        }
+        header {
+            background: #9575cd;
+            color: #ffffff;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+            border-radius: 12px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            padding: 25px;
+        }
+        .kotak {
+            background: #d1c4e9;
+            padding: 25px;
+            text-align: center;
+            border-radius: 10px;
+            color: #5e35b1;
+            font-weight: bold;
+            box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.4);
+        }
+        footer {
+            background: #7e57c2;
+            color: #ffffff;
+            text-align: center;
+            padding: 12px;
+            margin-top: 25px;
+            border-radius: 12px;
+            box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
 
+<body>
+    <div class="container">
+        <header>
+            <h1>MEMPELAJARI FLEXBOX DAN GRID</h1>
+        </header>
+        <section class="content">
+            <div class="kotak">Box 1</div>
+            <div class="kotak">Box 2</div>
+            <div class="kotak">Box 3</div>
+            <div class="kotak">Box 4</div>
+        </section>
+        <footer>
+            <p>&copy; 2025. Desain oleh 021 M ADITYA FIRMANSYAH.</p>
+        </footer>
+    </div>
+</body>
+</html>
