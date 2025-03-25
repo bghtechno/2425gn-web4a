@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Flexbox dan Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffe6f2; 
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        header {
+            background: #ffccdd; 
+            color: #ffffff; 
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .kotak {
+            background: #ffd9e6; 
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            color: #908c8c; 
+            font-weight: bold;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        footer {
+            background: #ffcce6; 
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>BELAJAR FLEXBOX DAN GRID </h1>
+        </header>
+        <section class="content">
+            <div class="kotak">Kotak 1</div>
+            <div class="kotak">Kotak 2</div>
+            <div class="kotak">Kotak 3</div>
+            <div class="kotak">Kotak 4</div>
+        </section>
+        <footer>
+            <p>&copy; 2025. Najwa Wahyu Azzuhra.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
