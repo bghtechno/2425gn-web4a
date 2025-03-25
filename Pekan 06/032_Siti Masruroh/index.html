@@ -20,34 +20,40 @@
             background: #003366;
             color: white;
             text-align: center;
-            padding: 1em;
+            padding: 0.5em;
         }
         .content {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            padding: 20px;
-            gap: 20px;
+            padding: 10px;
+            gap: 10px;
         }
         .sidebar {
             flex: 1 1 200px;
             background: #6699cc;
-            padding: 20px;
+            padding: 15px;
             color: white;
         }
         .main {
             flex: 3 1 600px;
             background: #99ccff;
-            padding: 20px;
+            padding: 15px;
             color: black;
+        }
+        .experience, .contact {
+            background: #6699cc;
+            padding: 15px;
+            margin-top: 10px;
+            color: white;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Website Pribadi</h1>
-            <h2>Siti Masruroh</h2>
+            <h1 style="margin: 0;">Website Pribadi</h1>
+            <h2 style="margin: 5px 0;">Siti Masruroh</h2>
         </header>
         <div class="content">
             <aside class="sidebar">
@@ -57,6 +63,15 @@
             <main class="main">
                 <h2>Data Pribadi</h2>
                 <p>Biodata</p>
+                <div class="experience">
+                    <h2>Pengalaman</h2>
+                    <p>Anggota Posdm 2024</p>
+                </div>
+                <div class="contact">
+                    <h2>Kontak</h2>
+                    <p>Email: imesssss08@gmail.com</p>
+                    <p>Telepon: 084556783297</p>
+                </div>
             </main>
         </div>
         <footer>
@@ -65,3 +80,4 @@
     </div>
 </body>
 </html>
+
