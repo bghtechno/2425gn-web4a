@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Viewport</title>
+    <style>
+        /* Mengatur tampilan backgound halaman */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #e1e0de; /* Warna kuning */
+            color: black; /* Teks warna hitam */
+        }
+
+        /* Header dengan warna kuning */
+        .header {
+            background-color: #fdd835;
+            color: black;
+            padding: 15px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Kontainer utama */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Grid untuk kotak menu */
+        .grid-container {
+            display: grid;
+            gap: 10px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        /* Responsif: 1 kolom di mobile, 4 kolom di desktop */
+        @media (min-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        /* Kotak menu */
+        .box {
+            background-color: #fff176;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-size: 18px;
+            color: black;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #fbc02d;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* Penjelasan responsif */
+        .explanation {
+            background-color: #fff176;
+            padding: 15px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Belajar CSS : FlexBox & Grid</div>
+
+    <!-- Menampilkan penjelasan pada layar -->
+    <div class="explanation">
+        <p><strong>Responsive Web Design</strong> adalah teknik desain web yang memungkinkan halaman web menyesuaikan diri secara otomatis dengan berbagai ukuran layar dan perangkat.</p>
+        <p>Dengan menggunakan fitur seperti viewport meta tag, CSS Flexbox, dan CSS Grid, tampilan web dapat berubah secara dinamis sesuai dengan resolusi layar pengguna.</p>
+        <p>Hal ini meningkatkan pengalaman pengguna karena tampilan web tetap optimal di berbagai perangkat seperti smartphone, tablet, dan desktop.</p>
+    </div>
+
+    <div class="container">
+        <div class="grid-container">
+            <div class="box">tombol 1</div>
+            <div class="box">tombol 2</div>
+            <div class="box">tombol 3</div>
+            <div class="box">tombol 4</div>
+        </div>
+    </div>
+
+    <div class="footer">© 2025. Muhammad Afi Maulana.</div>
+</body>
+</html>
