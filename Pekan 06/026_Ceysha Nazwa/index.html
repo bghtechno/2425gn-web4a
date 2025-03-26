@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'M CEYSHA NAZWA MUDYA PUTRI</title>
+    <style>
+        /* Reset margin dan padding default */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Gaya umum untuk body */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+        
+        /* Gaya header dan footer */
+        header, footer {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+        
+        /* Container utama dengan flexbox */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 0 auto;
+            max-width: 900px;
+        }
+        
+        /* Gaya sidebar navigasi */
+        .sidebar {
+            flex: 1;
+            min-width: 220px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .sidebar a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+        
+        .sidebar a:hover {
+            background: #007BFF;
+            color: white;
+        }
+        
+        /* Menghapus efek biru saat tombol ditekan */
+        .sidebar a:active {
+            background: none;
+        }
+        
+        /* Gaya konten utama */
+        .konten {
+            flex: 3;
+            min-width: 300px;
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .konten h2 {
+            color: #007BFF;
+            margin-bottom: 10px;
+        }
+        
+        .konten p {
+            margin-bottom: 10px;
+        }
+        
+        /* Garis pemisah */
+        hr {
+            margin: 20px 0;
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+        
+        /* Tabel dalam konten */
+        .konten table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        
+        .konten td {
+            padding: 4px 6px;
+            vertical-align: top;
+        }
+        
+        .konten td:first-child {
+            width: 180px;
+        }
+        
+        .konten td:nth-child(2) {
+            width: 10px;
+        }
+        
+        /* Responsif untuk layar kecil */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HALO, SAYA CEYSHA NAZWA MUDYA PUTRI</h1>
+        <p>Mahasiswa Pendidikan Informatika di Universitas Trunojoyo Madura</p>
+    </header>
+    <div class="container">
+        <!-- Sidebar Navigasi -->
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#keahlian">Keahlian</a></li>
+                <li><a href="#pengalaman">Pengalaman</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Konten Utama -->
+        <main class="konten">
+            <!-- Bagian Profil -->
+            <section id="profil">
+                <h2>Profil</h2>
+                <table>
+                    <tr>
+                        <td><strong>Nama</strong></td>
+                        <td>:</td>
+                        <td>Ceysha Nazwa Mudya Putri</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Jurusan</strong></td>
+                        <td>:</td>
+                        <td>Pendidikan Informatika</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Kampus</strong></td>
+                        <td>:</td>
+                        <td>Universitas Trunojoyo Madura</td>
+                    </tr>
+                </table>
+            </section>
+            <hr>
+            
+            <!-- Bagian Keahlian -->
+            <section id="keahlian">
+                <h2>Keahlian</h2>
+                <table>
+                    <tr>
+                        <td><strong>Keahlian</strong></td>
+                        <td>:</td>
+                        <td>Video Editing</td>
+                    </tr>
+                </table>
+            </section>
+            <hr>
+            
+            <!-- Bagian Pengalaman -->
+            <section id="pengalaman">
+                <h2>Pengalaman</h2>
+                <table>
+                     <tr>
+                        <td><strong>Anggota Organisasi</strong></td>
+                        <td>:</td>
+                        <td>UKM FKIP GP EST</td>
+                    </tr>
+                </table>
+            </section>
+            <hr>
+            
+            <!-- Bagian Kontak -->
+            <section id="kontak">
+                <h2>Kontak</h2>
+                <table>
+                    <tr>
+                        <td><strong>Email</strong></td>
+                        <td>:</td>
+                        <td><a href="mailto:ceyshap@gmail.com">ceyshap@gmail.com</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Instagram</strong></td>
+                        <td>:</td>
+                        <td><a href="https://instagram.com/ceyshaamp" target="_blank">@ceyshaamp</a></td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+    </div>
+    
+    <footer>
+        <p>&copy; 2004 Ceysha Nazwa Mudya Putri | Data Saya</p>
+    </footer>
+</body>
+</html>
