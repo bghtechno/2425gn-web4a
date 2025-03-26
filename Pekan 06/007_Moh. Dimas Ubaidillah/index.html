@@ -1,1 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid & Flexbox Example</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        
+
+        h1, h2 {
+            margin-bottom: 15px;
+        }
+
+        /* CSS Grid Layout */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 kolom dengan lebar sama */
+            gap: 20px; /* Jarak antar elemen */
+            background-color: #007BFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+        }
+
+        .grid-container > div {
+            background-color: #f1f1f1;
+            border: 2px solid #333;
+            padding: 20px;
+            font-size: 24px;
+            text-align: center;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .grid-container > div:hover {
+            background-color: #ffc107;
+            color: #333;
+            transform: scale(1.1);
+        }
+
+        /* CSS Flexbox Layout */
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            background-color: #28A745;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .flex-container > div {
+            background-color: #fff;
+            border: 2px solid #333;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 50%;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .flex-container > div:hover {
+            background-color: #ffc107;
+            color: #333;
+            transform: scale(1.2);
+            border-color: #fff;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 16px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer .social-icons {
+            margin-top: 10px;
+        }
+
+        .footer .social-icons a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+
+        .footer .social-icons a:hover {
+            color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu"></div>
+    <p> & Flexbox Example</p>
+
+    <h2>Grid Layout</h2>
+    <p>Contoh penggunaan <strong>CSS Grid</strong> dengan efek hover dan desain lebih modern.</p>
+    <div class="grid-container">
+        <div>Kotak 1</div>
+        <div>Kotak 2</div>
+        <div>Kotak 3</div>
+        <div>Kotak 4</div>
+        <div>Kotak 5</div>
+        <div>Kotak 6</div>
+    </div>
+
+    <h2>Flexbox Layout</h2>
+    <p>Contoh penggunaan <strong>CSS Flexbox</strong> dengan efek hover yang lebih interaktif.</p>
+    <div class="flex-container">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div>F</div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>MOH. DIMAS UBAIDILLAH
 
