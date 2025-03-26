@@ -1,22 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Pekan 6</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Nurul Aeni</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header, footer {
+            background: linear-gradient(135deg, #028f59, #74fc05);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        nav {
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #fa7de5;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .profile-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+        }
+
+        .profile-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .profile-card h2 {
+            margin-bottom: 10px;
+        }
+
+        .profile-card p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
-
-  <div class="header">
-    <h1>Pemrograman Web</h1>
-  </div>
-
-  <div class="topnav">
-    <a href="latihan1.html">Pekan 1</a>
-    <a href="latihan2.html">Pekan 2</a>
-    <a href="latihan3.html">Pekan 3</a>
-    <a href="internal.html">Pekan 4</a>
-  </div>
-
+    <header>
+        <h1>Profil Nurul Aeni</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <section class="profile-card">
+            <h2>Nurul Aeni</h2>
+            <p><strong>Email:</strong> aeni4280@gmail.com</p>
+            <p><strong>Telepon:</strong> 087842261832</p>
+            <p><strong>Alamat:</strong> Tuban, Jawa Timur</p>
+            <p><strong>Tentang Saya:</strong> Saya adalah mahasiswa pendidikan Informatika semester 4 yang sedang belajar pengembangan web dan jaringan komputer.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Nurul Aeni - Website Pribadi</p>
+    </footer>
 </body>
 </html>
