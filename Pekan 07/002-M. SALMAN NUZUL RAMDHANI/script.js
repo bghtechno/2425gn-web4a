@@ -5,8 +5,8 @@ console.log("Hai Dunia!");
 alert("Halo, selamat datang!");
 
 // Contoh penggunaan variabel
-let pengguna = "Andi";
-let usia = 20;
+let pengguna = "Dani";
+let usia = 17;
 
 // Contoh deklarasi fungsi
 function beriSalam(pengguna) {
